@@ -187,8 +187,11 @@ li {
 
 .home-section {
 	position: relative;
-	height: 900px;
-	margin-bottom: -54px
+	height: 700px;
+	/*margin-bottom: 0px;*/
+	background-color: #f25aff;
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
 
 .home-text {
@@ -209,16 +212,6 @@ li {
 .home-background {
 	background-repeat: no-repeat;
 	background-image: url("img/");
-}
-
-/*Property Section*/
-.property-section{
-	margin-bottom: 40px;
-	padding-top: 15px;
-}
-
-.property-item {
-	margin-bottom: 30px;
 }
 
 
@@ -278,6 +271,9 @@ li {
 	margin-left: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	background-color: #ffe289;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 .properties-title {
@@ -317,19 +313,21 @@ li {
 
 /*Mission*/
 .mission {
+	position: relative;
 	text-align: center;
-	background: url("img/feature-cate/4.jpg");
+	/*background: url("img/feature-cate/4.jpg");*/
 	background-repeat: no-repeat;
 	background-size: auto;
-	padding-top: 15%;
+	background-color: #8df9b7;
+	padding: 35px;
 }
 
 /*Agents Team*/
 
 .agents{
+	/*position: relative;*/
 	background-color: #cddcdf;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	padding: 35px;
 }
 
 .agents-title {
@@ -376,17 +374,23 @@ li {
 	background-color: #4a4b4b;
 }
 
+.footer-details p {
+	margin-top: 30px;
+}
+
 .footer-contact {
 	padding-left: 10px;
 }
 
 .footer-contact p i {
-	margin-bottom: 5px;
+	margin-top: 18px;
+	/*margin-bottom: 5px;*/
 }
 
-.footer-newsletter {
+.footer-newsletter p {
 	position: relative;
 	height: 40px;
+	margin-top: 18px;
 }
 
 .footer-background {
