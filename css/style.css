@@ -290,12 +290,11 @@ li {
 .agents{
 	/*position: relative;*/
 	background-color: #ffffff;
-	padding: 35px;
 }
 
 .agents-title {
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-bottom: 30px;
 }
 
@@ -385,48 +384,62 @@ li {
 }
 
 
-
-
-
-
 /*About Section*/
-/*.about .about-title {
-	margin-bottom: 40px;
-	padding-top: 15px;
+.about-top {
+	padding-top: 210px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: relative;
+	background-image: url(../img/about-us.jpg);
 }
 
-.about-item {
-	margin-bottom: 30px;
-}
-
-.about-item:last-child {
-	margin-bottom: 0;
-}
-
-.about-item i {
-	height: 50px;
-	width: 50px;
-	background: #00bb88;
-	border-radius: 25px;
+.about-us {
 	text-align: center;
-	padding-top: 18px;
-	color: #592b2b;
-	font-size: 24px;
-	float: left;
+	color: #757575;
+	margin-top: 10px;
 }
 
-.about-item .about-text {
-	padding-left: 80px;
+.about {
+	background-color: #ffffff;
+	padding: 80px;
 }
 
-.about-item .about-text h5 {
-	font-weight: 400;
-	color: #fff;
-	font-size: 18px;
-	margin-bottom: 8px;
+.about-details {
+	margin-top: 30px;
 }
 
-.about-item .about-text p {
-	margin-bottom: 0;
-	color: #cccccc;
-}*/
+.about img {
+	padding-bottom: 20px;
+}
+
+/*Award Section*/
+.award {
+	padding: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: relative;
+	background-image: url(../img/award.jpg);
+}
+
+.award-title {
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.award-title p {
+	color: #ffffff;
+}
+
+.award-content p {
+	color: #ffffff;
+	/*margin-top: 10px;*/
+	font-size: 16px;
+	padding: 25px;
+}
+
+.award-image img {
+	border-radius: 24px;
+	padding: 20px;
+}
