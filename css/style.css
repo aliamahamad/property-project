@@ -187,8 +187,15 @@ li {
 
 .home-section {
 	position: relative;
-	height: 900px;
-	margin-bottom: -54px
+	height: 700px;
+	/*margin-bottom: 0px;*/
+	/*background-color: #f25aff;*/
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background-image: url(../img/bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .home-text {
@@ -204,21 +211,12 @@ li {
 .home-text p {
 	font-size: 22px;
 	margin-bottom: 50px;
+	color: #ffffff;
 }
 
 .home-background {
 	background-repeat: no-repeat;
 	background-image: url("img/");
-}
-
-/*Property Section*/
-.property-section{
-	margin-bottom: 40px;
-	padding-top: 15px;
-}
-
-.property-item {
-	margin-bottom: 30px;
 }
 
 
@@ -229,48 +227,6 @@ li {
 	}
 }
 
-/*About Section*/
-.about .about-title {
-	margin-bottom: 40px;
-	padding-top: 15px;
-}
-
-.about-item {
-	margin-bottom: 30px;
-}
-
-.about-item:last-child {
-	margin-bottom: 0;
-}
-
-.about-item i {
-	height: 50px;
-	width: 50px;
-	background: #00bb88;
-	border-radius: 25px;
-	text-align: center;
-	padding-top: 18px;
-	color: #592b2b;
-	font-size: 24px;
-	float: left;
-}
-
-.about-item .about-text {
-	padding-left: 80px;
-}
-
-.about-item .about-text h5 {
-	font-weight: 400;
-	color: #fff;
-	font-size: 18px;
-	margin-bottom: 8px;
-}
-
-.about-item .about-text p {
-	margin-bottom: 0;
-	color: #cccccc;
-}
-
 /*Property section*/
 
 .properties {
@@ -278,6 +234,9 @@ li {
 	margin-left: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	background-color: #ffffff;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 .properties-title {
@@ -317,19 +276,21 @@ li {
 
 /*Mission*/
 .mission {
+	position: relative;
 	text-align: center;
-	background: url("img/feature-cate/4.jpg");
+	/*background: url("img/feature-cate/4.jpg");*/
 	background-repeat: no-repeat;
-	background-size: auto;
-	padding-top: 15%;
+	background-size: cover;
+	background-color: #f3f3f3;
+	padding: 35px;
 }
 
 /*Agents Team*/
 
 .agents{
-	background-color: #cddcdf;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	/*position: relative;*/
+	background-color: #ffffff;
+	padding: 35px;
 }
 
 .agents-title {
@@ -361,19 +322,27 @@ li {
 	position: relative;
 }
 
-.member-contact p i {
+.member-contact p {
 	color: #30caa0;
-	margin-right: 10px;
+	margin-right: 30px;
 	line-height: 1.8;
+	padding-top: 0px;
 }
 
 /*Footer*/
 
 .footer {
 	position: relative;
-	padding-top: 125px;
-	padding-bottom: 25px;
-	background-color: #4a4b4b;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	background-image: url(../img/footer-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.footer-details p {
+	margin-top: 30px;
 }
 
 .footer-contact {
@@ -381,18 +350,14 @@ li {
 }
 
 .footer-contact p i {
-	margin-bottom: 5px;
+	margin-top: 18px;
+	/*margin-bottom: 5px;*/
 }
 
-.footer-newsletter {
+.footer-newsletter p {
 	position: relative;
 	height: 40px;
-}
-
-.footer-background {
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: #175667;
+	margin-top: 18px;
 }
 
 .footer h5 {
@@ -414,7 +379,54 @@ li {
 
 .footer-newsletter-form input {
 	width: 100%
-	height: 40px;
+	height: 30px;
 	padding-right: 50px;
-	padding: 10px 15px;
+	padding-left: 10px;
 }
+
+
+
+
+
+
+/*About Section*/
+/*.about .about-title {
+	margin-bottom: 40px;
+	padding-top: 15px;
+}
+
+.about-item {
+	margin-bottom: 30px;
+}
+
+.about-item:last-child {
+	margin-bottom: 0;
+}
+
+.about-item i {
+	height: 50px;
+	width: 50px;
+	background: #00bb88;
+	border-radius: 25px;
+	text-align: center;
+	padding-top: 18px;
+	color: #592b2b;
+	font-size: 24px;
+	float: left;
+}
+
+.about-item .about-text {
+	padding-left: 80px;
+}
+
+.about-item .about-text h5 {
+	font-weight: 400;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.about-item .about-text p {
+	margin-bottom: 0;
+	color: #cccccc;
+}*/
