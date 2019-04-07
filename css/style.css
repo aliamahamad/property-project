@@ -189,9 +189,13 @@ li {
 	position: relative;
 	height: 700px;
 	/*margin-bottom: 0px;*/
-	background-color: #f25aff;
+	/*background-color: #f25aff;*/
 	padding-top: 30px;
 	padding-bottom: 50px;
+	background-image: url(../img/bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .home-text {
@@ -207,6 +211,7 @@ li {
 .home-text p {
 	font-size: 22px;
 	margin-bottom: 50px;
+	color: #ffffff;
 }
 
 .home-background {
@@ -222,48 +227,6 @@ li {
 	}
 }
 
-/*About Section*/
-.about .about-title {
-	margin-bottom: 40px;
-	padding-top: 15px;
-}
-
-.about-item {
-	margin-bottom: 30px;
-}
-
-.about-item:last-child {
-	margin-bottom: 0;
-}
-
-.about-item i {
-	height: 50px;
-	width: 50px;
-	background: #00bb88;
-	border-radius: 25px;
-	text-align: center;
-	padding-top: 18px;
-	color: #592b2b;
-	font-size: 24px;
-	float: left;
-}
-
-.about-item .about-text {
-	padding-left: 80px;
-}
-
-.about-item .about-text h5 {
-	font-weight: 400;
-	color: #fff;
-	font-size: 18px;
-	margin-bottom: 8px;
-}
-
-.about-item .about-text p {
-	margin-bottom: 0;
-	color: #cccccc;
-}
-
 /*Property section*/
 
 .properties {
@@ -271,7 +234,7 @@ li {
 	margin-left: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	background-color: #ffe289;
+	background-color: #ffffff;
 	padding-top: 35px;
 	padding-bottom: 35px;
 }
@@ -317,8 +280,8 @@ li {
 	text-align: center;
 	/*background: url("img/feature-cate/4.jpg");*/
 	background-repeat: no-repeat;
-	background-size: auto;
-	background-color: #8df9b7;
+	background-size: cover;
+	background-color: #f3f3f3;
 	padding: 35px;
 }
 
@@ -326,7 +289,7 @@ li {
 
 .agents{
 	/*position: relative;*/
-	background-color: #cddcdf;
+	background-color: #ffffff;
 	padding: 35px;
 }
 
@@ -359,10 +322,11 @@ li {
 	position: relative;
 }
 
-.member-contact p i {
+.member-contact p {
 	color: #30caa0;
-	margin-right: 10px;
+	margin-right: 30px;
 	line-height: 1.8;
+	padding-top: 0px;
 }
 
 /*Footer*/
@@ -371,7 +335,10 @@ li {
 	position: relative;
 	padding-top: 80px;
 	padding-bottom: 40px;
-	background-color: #4a4b4b;
+	background-image: url(../img/footer-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 .footer-details p {
@@ -391,12 +358,6 @@ li {
 	position: relative;
 	height: 40px;
 	margin-top: 18px;
-}
-
-.footer-background {
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: #175667;
 }
 
 .footer h5 {
@@ -422,3 +383,50 @@ li {
 	padding-right: 50px;
 	padding-left: 10px;
 }
+
+
+
+
+
+
+/*About Section*/
+/*.about .about-title {
+	margin-bottom: 40px;
+	padding-top: 15px;
+}
+
+.about-item {
+	margin-bottom: 30px;
+}
+
+.about-item:last-child {
+	margin-bottom: 0;
+}
+
+.about-item i {
+	height: 50px;
+	width: 50px;
+	background: #00bb88;
+	border-radius: 25px;
+	text-align: center;
+	padding-top: 18px;
+	color: #592b2b;
+	font-size: 24px;
+	float: left;
+}
+
+.about-item .about-text {
+	padding-left: 80px;
+}
+
+.about-item .about-text h5 {
+	font-weight: 400;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.about-item .about-text p {
+	margin-bottom: 0;
+	color: #cccccc;
+}*/
