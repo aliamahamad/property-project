@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "install npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliamahamad/property-project.git"
+  },
+  "author": "aliamahamad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliamahamad/property-project/issues"
+  },
+  "homepage": "https://github.com/aliamahamad/property-project#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
