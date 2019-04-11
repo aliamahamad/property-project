@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aliamahamad/property-project/issues"
   },
-  "homepage": "https://github.com/aliamahamad/property-project#readme"
+  "homepage": "https://github.com/aliamahamad/property-project#readme",
+  "dependencies": {
+    "install-peers": "^1.0.3"
+  }
 }
