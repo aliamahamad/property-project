@@ -1,0 +1,848 @@
+aliam@DELL-ALIA MINGW64 ~
+$ cd c:
+c
+aliam@DELL-ALIA MINGW64 /c
+$ cd xampp/htdocs/
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs
+$ cd property/
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git status
+On branch features/first_commit
+nothing to commit, working tree clean
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git status
+On branch features/first_commit
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   css/style.css
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git checkout -b features/edit_css
+Switched to a new branch 'features/edit_css'
+M       css/style.css
+M       index.html
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git checkout features/edit_css
+Already on 'features/edit_css'
+M       css/style.css
+M       index.html
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git add .
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git commit -m "edit margin, padding and so on..."
+[features/edit_css 00df2cb] edit margin, padding and so on...
+ 2 files changed, 23 insertions(+), 19 deletions(-)
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git branch
+* features/edit_css
+  features/first_commit
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git pull origin development
+fatal: Couldn't find remote ref development
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git checkout features/first_commit
+Switched to branch 'features/first_commit'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git pull origin features/first_commit
+From https://github.com/aliamahamad/property-project09
+ * branch            features/first_commit -> FETCH_HEAD
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git checkout features/edit_css
+Switched to branch 'features/edit_css'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git push origin features/edit_css
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 702 bytes | 702.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/aliamahamad/property-project.git
+remote:
+remote: Create a pull request for 'features/edit_css' on GitHub by visiting:
+remote:      https://github.com/aliamahamad/property-project/pull/new/features/edit_css
+remote:
+To https://github.com/aliamahamad/property-project09.git
+ * [new branch]      features/edit_css -> features/edit_css
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git status
+On branch features/edit_css
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   css/style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git add .
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git commit -m "edit newsletter form in css"
+[features/edit_css c0c7414] edit newsletter form in css
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git push origin features/edit_css
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 412 bytes | 412.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/aliamahamad/property-project.git
+To https://github.com/aliamahamad/property-project09.git
+   00df2cb..c0c7414  features/edit_css -> features/edit_css
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git status
+On branch features/edit_css
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   css/style.css
+        modified:   img/bg.jpg
+        modified:   img/footer-bg.jpg
+        modified:   index.html
+        deleted:    js/main.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        js/bootstrap.js
+        js/bootstrap.min.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git add .
+warning: LF will be replaced by CRLF in js/bootstrap.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in js/bootstrap.min.js.
+The file will have its original line endings in your working directory.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git commit -m "add background and change background color"
+[features/edit_css e24fc63] add background and change background color
+ 7 files changed, 4511 insertions(+), 74 deletions(-)
+ rewrite img/bg.jpg (99%)
+ rewrite img/footer-bg.jpg (90%)
+ create mode 100644 js/bootstrap.js
+ create mode 100644 js/bootstrap.min.js
+ delete mode 100644 js/main.js
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git push origin features/edit_css
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 643.33 KiB | 13.69 MiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/aliamahamad/property-project.git
+To https://github.com/aliamahamad/property-project09.git
+   c0c7414..e24fc63  features/edit_css -> features/edit_css
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git status
+On branch features/edit_css
+nothing to commit, working tree clean
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git branch
+* features/edit_css
+  features/first_commit
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git merge features/edit_css
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git checkout features/first_commit
+Switched to branch 'features/first_commit'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git merge features/first_commit
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git pull origin features/first_commit
+fatal: unable to access 'https://github.com/aliamahamad/property-project09.git/': Could not resolve host: github.com
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git status
+On branch features/first_commit
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   about.html
+        modified:   css/style.css
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git branch
+  features/edit_css
+* features/first_commit
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git checkout features/edit_css
+error: Your local changes to the following files would be overwritten by checkout:
+        css/style.css
+        index.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git stash
+Saved working directory and index state WIP on features/first_commit: c0ee385 first commit
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git checkout features/edit_css
+Switched to branch 'features/edit_css'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git merge features/edit_css
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git checkouot features/first_commit
+git: 'checkouot' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git checkout features/first_commit
+Switched to branch 'features/first_commit'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git merge features/first_commit
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git pull origin features/first_commit
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/aliamahamad/property-project09
+ * branch            features/first_commit -> FETCH_HEAD
+   c0ee385..aa65ecb  features/first_commit -> origin/features/first_commit
+Updating c0ee385..aa65ecb
+Fast-forward
+ css/style.css       |  164 +-
+ img/bg.jpg          |  Bin 165111 -> 23163 bytes
+ img/footer-bg.jpg   |  Bin 34723 -> 602134 bytes
+ index.html          |    8 +-
+ js/bootstrap.js     | 4435 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ js/bootstrap.min.js |    7 +
+ js/main.js          |   15 -
+ 7 files changed, 4535 insertions(+), 94 deletions(-)
+ create mode 100644 js/bootstrap.js
+ create mode 100644 js/bootstrap.min.js
+ delete mode 100644 js/main.js
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git checkout features/edit_css
+Switched to branch 'features/edit_css'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git pull origin features/edit_css
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/aliamahamad/property-project09
+ * branch            features/edit_css -> FETCH_HEAD
+   e24fc63..5bd0939  features/edit_css -> origin/features/edit_css
+Updating e24fc63..5bd0939
+Fast-forward
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git status
+On branch features/edit_css
+nothing to commit, working tree clean
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git checkout features/first_commit
+Switched to branch 'features/first_commit'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git status
+On branch features/first_commit
+nothing to commit, working tree clean
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git checkout -b features/about_page
+Switched to a new branch 'features/about_page'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git status
+On branch features/about_page
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   about.html
+        modified:   css/style.css
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        img/about-us.jpg
+        img/award.jpg
+        img/award.png
+        img/beach.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git add .
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git commit -m "siap about page"
+[features/about_page 05ec1a6] siap about page
+ 7 files changed, 280 insertions(+), 35 deletions(-)
+ create mode 100644 img/about-us.jpg
+ create mode 100644 img/award.jpg
+ create mode 100644 img/award.png
+ create mode 100644 img/beach.jpg
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git push origin features/about_page
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 995.49 KiB | 397.00 KiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/aliamahamad/property-project.git
+remote:
+remote: Create a pull request for 'features/about_page' on GitHub by visiting:
+remote:      https://github.com/aliamahamad/property-project/pull/new/features/about_page
+remote:
+To https://github.com/aliamahamad/property-project09.git
+ * [new branch]      features/about_page -> features/about_page
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git status
+On branch features/about_page
+nothing to commit, working tree clean
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git merge features/about_page
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git pull origin features/about_page
+From https://github.com/aliamahamad/property-project09
+ * branch            features/about_page -> FETCH_HEAD
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git branch
+* features/about_page
+  features/edit_css
+  features/first_commit
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git checkout features/edit_css
+Switched to branch 'features/edit_css'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git pull origin features/edit_css
+From https://github.com/aliamahamad/property-project09
+ * branch            features/edit_css -> FETCH_HEAD
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/edit_css)
+$ git checkout features/first_commit
+Switched to branch 'features/first_commit'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git pull origin features/first_commit
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/aliamahamad/property-project09
+ * branch            features/first_commit -> FETCH_HEAD
+   aa65ecb..6ea6529  features/first_commit -> origin/features/first_commit
+Updating aa65ecb..6ea6529
+Fast-forward
+ about.html       | 232 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ css/style.css    |  75 ++++++++++--------
+ img/about-us.jpg | Bin 0 -> 897502 bytes
+ img/award.jpg    | Bin 0 -> 6032 bytes
+ img/award.png    | Bin 0 -> 47364 bytes
+ img/beach.jpg    | Bin 0 -> 65264 bytes
+ index.html       |   8 +-
+ 7 files changed, 280 insertions(+), 35 deletions(-)
+ create mode 100644 img/about-us.jpg
+ create mode 100644 img/award.jpg
+ create mode 100644 img/award.png
+ create mode 100644 img/beach.jpg
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git branch
+  features/about_page
+  features/edit_css
+* features/first_commit
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/first_commit)
+$ git checkout features/about_page
+Switched to branch 'features/about_page'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git pull origin features/about_page
+From https://github.com/aliamahamad/property-project09
+ * branch            features/about_page -> FETCH_HEAD
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git checkout features/contact_page
+error: pathspec 'features/contact_page' did not match any file(s) known to git.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property (features/about_page)
+$ git checkout -b features/contact_page
+Switched to a new branch 'features/contact_page'
+
+
+aliam@DELL-ALIA MINGW64 /c
+$ cd xampp/htdocs/property-project/
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/mission_section)
+$ git status
+On branch features/mission_section
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        js/jquery-3.3.1.min.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/mission_section)
+$ npm install
+npm WARN npm@1.0.0 No description
+npm WARN npm@1.0.0 No repository field.
+
+audited 172 packages in 3.082s
+found 0 vulnerabilities
+
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/mission_section)
+$ npm run watch:js
+npm ERR! missing script: watch:js
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\aliam\AppData\Roaming\npm-cache\_logs\2019-04-11T09_13_19_309Z-debug.log
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/mission_section)
+$ git status
+On branch features/mission_section
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   img/bg.jpg
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        js/jquery-3.3.1.min.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/mission_section)
+$ git diff
+diff --git a/img/bg.jpg b/img/bg.jpg
+index 7e67bc0..de373f1 100644
+Binary files a/img/bg.jpg and b/img/bg.jpg differ
+diff --git a/index.html b/index.html
+index f1d2ecd..eec67e7 100644
+--- a/index.html
++++ b/index.html
+@@ -12,6 +12,9 @@
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
++
++       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
++
+ </head>
+ <body>
+
+@@ -267,5 +270,6 @@
+
+ <script src="js/bootstrap.js"></script>
+ <script src="js/bootstrap.min.js"></script>
++<script src="js/jquery-3.3.1.min.js"></script>
+
+ </html>
+\ No newline at end of file
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/mission_section)
+$ git branch
+  development
+  features/agents_section
+  features/create_include
+  features/delete_jquery
+  features/first_commit
+  features/footer
+* features/mission_section
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/mission_section)
+$ git checkout -c features/jquery
+error: unknown switch `c'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/mission_section)
+$ git checkout -b features/jquery
+Switched to a new branch 'features/jquery'
+M       img/bg.jpg
+M       index.html
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ git add .
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ git commit -am "jquery script n cdn"
+[features/jquery a8937a5] jquery script n cdn
+ 3 files changed, 6 insertions(+)
+ rewrite img/bg.jpg (93%)
+ create mode 100644 js/jquery-3.3.1.min.js
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ git checkout develop,ent
+error: pathspec 'develop,ent' did not match any file(s) known to git.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ git checkout development
+Switched to branch 'development'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git pull origin development
+From https://github.com/aliamahamad/property-project
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git checkout featues/jquery
+error: pathspec 'featues/jquery' did not match any file(s) known to git.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git checkout features/jquery
+Switched to branch 'features/jquery'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ git push origin features/jquery
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 537.09 KiB | 19.89 MiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote:
+remote: Create a pull request for 'features/jquery' on GitHub by visiting:
+remote:      https://github.com/aliamahamad/property-project/pull/new/features/jquery
+remote:
+To https://github.com/aliamahamad/property-project.git
+ * [new branch]      features/jquery -> features/jquery
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ git merge features/jquery
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ git checkout development
+Switched to branch 'development'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git pull origin developemnt
+fatal: Couldn't find remote ref developemnt
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git pull origin development
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/aliamahamad/property-project
+ * branch            development -> FETCH_HEAD
+   825bafb..d32ee3f  development -> origin/development
+Updating 825bafb..d32ee3f
+Fast-forward
+ img/bg.jpg             | Bin 340574 -> 532526 bytes
+ index.html             |   4 ++++
+ js/jquery-3.3.1.min.js |   2 ++
+ 3 files changed, 6 insertions(+)
+ create mode 100644 js/jquery-3.3.1.min.js
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git merge development
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git pull origin development
+From https://github.com/aliamahamad/property-project
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git checkout features/jquery
+Switched to branch 'features/jquery'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (property-project) package-lock.json
+version: (1.0.0) 1.0.0
+description:
+entry point: (index.js)
+test command: npm run development
+git repository: (https://github.com/aliamahamad/property-project.git)
+keywords:
+author: aliamahamad
+license: (ISC)
+About to write to C:\xampp\htdocs\property-project\package.json:
+
+{
+  "name": "package-lock.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliamahamad/property-project.git"
+  },
+  "author": "aliamahamad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliamahamad/property-project/issues"
+  },
+  "homepage": "https://github.com/aliamahamad/property-project#readme"
+}
+
+
+Is this OK? (yes) yes
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ npm run
+Lifecycle scripts included in package.json:
+  test
+    npm run development
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ npm install
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN package.json@1.0.0 No description
+
+up to date in 1.704s
+found 0 vulnerabilities
+
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/jquery)
+$ git checkout -b features/json
+Switched to a new branch 'features/json'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/json)
+$ git add .
+warning: LF will be replaced by CRLF in package-lock.json.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/json)
+$ git commit -am "install package.json n package-lock.json"
+[features/json d09c843] install package.json n package-lock.json
+ 2 files changed, 24 insertions(+)
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/json)
+$ git checkout development
+Switched to branch 'development'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git pull origin development
+From https://github.com/aliamahamad/property-project
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git checkout features/json
+Switched to branch 'features/json'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/json)
+$ git pull origin development
+From https://github.com/aliamahamad/property-project
+ * branch            development -> FETCH_HEAD
+hint: Waiting for your editor to close the file... Already up to date!
+      2 [sig] bash 6304! sigpacket::process: Suppressing signal 18 to win32 process (pid 4304)
+Merge made by the 'recursive' strategy.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/json)
+$ git push origin features/json
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 802 bytes | 401.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'features/json' on GitHub by visiting:
+remote:      https://github.com/aliamahamad/property-project/pull/new/features/json
+remote:
+To https://github.com/aliamahamad/property-project.git
+ * [new branch]      features/json -> features/json
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/json)
+$ git merge features/json
+Already up to date.
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (features/json)
+$ git checkout development
+Switched to branch 'development'
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git pull origin development
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/aliamahamad/property-project
+ * branch            development -> FETCH_HEAD
+   d32ee3f..f109004  development -> origin/development
+Updating d32ee3f..f109004
+Fast-forward
+ package-lock.json |  5 +++++
+ package.json      | 19 +++++++++++++++++++
+ 2 files changed, 24 insertions(+)
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+
+aliam@DELL-ALIA MINGW64 /c/xampp/htdocs/property-project (development)
+$ git merge development
+Already up to date.
